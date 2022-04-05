@@ -243,20 +243,15 @@ h2 {
 .technologies {
   padding-top: 1em;
   display: flex;
-  flex-direction: column;
+
 }
 
-.technologies ion-icon {
-  font-size: 5em;
-  color: #3c1c38;
+.technologies img{
+  padding: 0 0.4em 0 0;
+  height:7%;
+  
 }
 
-.technologies p {
-  text-align: left;
-  padding: 0 0 0 0.7em;
-  font-size: 1.2rem;
-  color: #3c1c38;
-}
 
 .references {
   margin-top: 2em;
