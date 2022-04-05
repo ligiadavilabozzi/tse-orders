@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: sans-serif;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.App .navbar {
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  align-items: center;
+  color: #ef3f36;
+  background: #140019;
+  position: fixed;
+  padding: 0 3em;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.logo img {
+  height: 1rem;
+}
+
+.App .navbar .nav-links {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  list-style: none;
+}
+
+.App .navbar .nav-links > a {
+  color: #ef3f36;
+  padding-left: 4em;
+  text-decoration: none;
+}
+
+.navbar {
+  margin-top: 0;
+}
+
+nav {
+  display: flex;
+  height: 20px;
+  justify-content: flex-end;
+  padding: 1em;
+}
+
+li {
+  list-style: None;
+  padding: 1em;
+}
+
+.filter {
+  display: flex;
+  justify-content: flex-end;
+}
+.filtering {
+  padding: 1.5em 1.5em 0.2em 0em;
+}
+
+.searcher {
+  border: solid 1px #3c1c38;
+  border-radius: 4px;
+  background: #f7f5f5;
+}
+
+input {
+  -webkit-appearance: none;
+  border: 1px solid gray;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 100%;
+  background: #f0f0f0;
+}
+
+.totals {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding-top: 15vh;
+}
+
+.total {
+  font-style: strong;
+  color: #ef3f36;
+  font-size: 1.5rem;
+}
+
+table {
+  text-align: center;
+}
+
+.table-st {
+  display: flex;
+  padding: 0 1.5em 0 1.5em;
+}
+
+.style-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9em;
+  font-family: "Fira Code", monospace;
+  min-width: 300px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.style-table thead tr {
+  background-color: #3c1c38;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.style-table th,
+.style-table td {
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.style-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.style-table tbody tr:last-of-type {
+  border-bottom: 1px solid #3c1c38;
+}
+
+.seller {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  padding: 2.1em;
+  font-size: 16px;
+  width: 25vw;
+  font-family: "Fira Code", monospace;
+}
+
+tr ion-icon {
+  color: white;
+}
+
+th span {
+  margin-right: 1rem;
+}
+
+table button {
+  color: white;
+  font-size: 0.8em;
+  border: None;
+
+  padding: 0.5em;
+  background-color: #3c1c38;
+}
+
+.pagination {
+  margin-right: 3em;
+  margin-left: 3em;
+  margin-top: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  color: #3c1c38;
+  padding: 0.5rem;
+  align-items: center;
+  font-family: "Fira Code", monospace;
+}
+
+.pagination button:hover {
+  box-shadow: 0 2px 6px 0 rgba(122, 97, 97, 0.24),
+    0 7px 50px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+.pagination button:disabled {
+  color: #ccbfca;
+}
+
+.pagination button:disabled ion-icon {
+  color: #9e959d;
+}
+
+.pagination button {
+  padding: 0.5em;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 1em;
+  color: #3c1c38;
+  background-color: white;
+  font-family: "Fira Code", monospace;
+}
+
+ion-icon {
+  font-size: 1.2em;
+  color: #3c1c38;
+}
+
+.pagination p {
+  color: #ef3f36;
+  font-size: 1.1em;
+  margin: 10px;
+}
+
+.number-page {
+  font-weight: bold;
+  padding: 0;
+}
+
+p {
+  text-align: center;
+  padding: 5rem;
+  font-size: 2rem;
+}
+
+.info {
+  padding-top: 15vh;
+  color: black;
+  padding-left: 2rem;
+  font-family: "Fira Code", monospace;
+}
+
+.info img {
+  height: 5rem;
+}
+
+h2 {
+  margin-bottom: 2rem;
+  color: #ef3f36;
+}
+
+.technologies {
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.technologies ion-icon {
+  font-size: 5em;
+  color: #3c1c38;
+}
+
+.technologies p {
+  text-align: left;
+  padding: 0 0 0 0.7em;
+  font-size: 1.2rem;
+  color: #3c1c38;
+}
+
+.references {
+  margin-top: 2em;
+}
+
+.references {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0;
+  font-size: 1em;
+}
+
+a {
+  margin-top: 0.5em;
+  text-decoration: none;
+  color: #3c1c38;
+}
